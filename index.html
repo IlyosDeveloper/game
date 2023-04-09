@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>ENG-UZ</title>
+  </head>
+  <body>
+    <div class="bg-all">
+      <div class="bg"></div>
+      <div class="bg bg2"></div>
+      <div class="bg bg3"></div>
+    </div>
+    <div class="container enter-page">
+      <div class="enter-game">
+        <h6 class="enter-title">Boshlash uchun ismingizni kiriting</h6>
+        <form>
+          <input
+            class="input"
+            required=""
+            type="text"
+            placeholder="Enter your name to register" />
+          <button id="enter-btn" class="custom-btn btn-12">
+            <span>TASTIQLASH</span><span>CONFIRMATION</span>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="container level-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 id="text-level" class="animate-charcter"></h3>
+          </div>
+        </div>
+      </div>
+      <div class="level">
+        <button id="enter1" class="custom-btn btn-12">
+          <span>OSON</span><span>EASY</span>
+        </button>
+        <button id="enter2" class="custom-btn btn-12">
+          <span>O'RTACHA</span><span>MEDIUM</span>
+        </button>
+        <button id="enter3" class="custom-btn btn-12">
+          <span>MURAKKAB</span><span>HARD</span>
+        </button>
+      </div>
+    </div>
+    <div class="words-list">
+      <div class="words">
+        <h1 class="random-word"></h1>
+        <div class="hr"></div>
+        <div class="uzb"></div>
+      </div>
+      <div class="scores">
+        <p class="score1">Correct answers: 0</p>
+        <p class="score2">Wrong answers: 0</p>
+        <h3>Record: <span id="record">0</span></h3>
+        <p class="time">Time: 00</p>
+      </div>
+    </div>
+    <div class="modal hidden">
+      <h2 class="modal-title">Your answers:</h2>
+      <h2 class="modal-title2">Your errors:</h2>
+      <h2 class="modal-title3">Your record:</h2>
+      <button id="new-game" class="custom-btn btn-12 new-game-btn">
+        <span>YANGI O'YIN</span><span>NEW GAME</span>
+      </button>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
